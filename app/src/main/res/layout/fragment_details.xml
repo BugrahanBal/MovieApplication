@@ -10,7 +10,6 @@
             android:id="@+id/ToolbarLayoutDetails"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:background="#F3B0B0"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +26,7 @@
                     android:focusable="true"
                     android:onClick="backButtonClick"
                     android:text="Back"
-                    android:textSize="5dp">
+                    android:textSize="5sp">
 
                 </Button>
 
@@ -37,10 +36,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:layout_margin="6dp"
+                    android:layout_margin="10dp"
                     android:fontFamily="@font/matsc"
                     android:text="Title"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
         </androidx.appcompat.widget.Toolbar>
 
@@ -58,8 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/movieImageDetails"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="29dp"
-            android:layout_marginBottom="6dp"
+            android:layout_margin="5dp"
             android:fontFamily="@font/matsc"
             android:text="Popularity"
             android:textSize="18sp" />
@@ -68,25 +66,23 @@
             android:id="@+id/voteAverage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="167dp"
             android:fontFamily="@font/matsc"
+            android:layout_margin="5dp"
             android:text="VoteAvarage"
+            android:layout_below="@+id/moviePopularity"
             android:textSize="18sp" />
 
         <TextView
             android:id="@+id/movieOverview"
-            android:layout_width="392dp"
-            android:layout_height="161dp"
-            android:layout_below="@id/moviePopularity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="69dp"
-            android:layout_marginBottom="9dp"
+            android:layout_margin="5dp"
             android:fontFamily="@font/matsc"
             android:scrollbars="vertical"
+            android:layout_below="@id/voteAverage"
             android:text="OverView"
             android:textSize="15sp" />
 </RelativeLayout>
