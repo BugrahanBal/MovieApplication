@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ToolbarLayoutDetails"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#F3B0B0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            tools:ignore="ExtraText">
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_dark"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="backButtonClick"
+                    android:text="Back"
+                    android:textSize="5dp">
+
+                </Button>
+
+                <TextView
+                    android:id="@+id/movieTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:fontFamily="@font/matsc"
+                    android:text="Title"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/movieImageDetails"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/ToolbarLayoutDetails"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/moviePopularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieImageDetails"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/matsc"
+            android:text="Popularity"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/voteAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="167dp"
+            android:fontFamily="@font/matsc"
+            android:text="VoteAvarage"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/movieOverview"
+            android:layout_width="392dp"
+            android:layout_height="161dp"
+            android:layout_below="@id/moviePopularity"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="@font/matsc"
+            android:scrollbars="vertical"
+            android:text="OverView"
+            android:textSize="15sp" />
+</RelativeLayout>
