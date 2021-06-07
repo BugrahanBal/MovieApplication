@@ -20,7 +20,7 @@ abstract class MainPageAdapter(var context: Context, movieList: ArrayList<Movie>
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     companion object {
-        var MOVIE_ROW = 20978
+        var MOVIE_ROW = 20
         var LOAD_MORE_ROW = 21
     }
 
